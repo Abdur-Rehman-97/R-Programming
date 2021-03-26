@@ -10,7 +10,7 @@ R is interpreted language. It can be access to command-line interpreter. If a us
 ```
 
 ## Installing R
-Your can donwload R from the link given below. choose R distribuition accordingly your Oerating System.
+Your can donwload R from the link given below. choose R distribuition accordingly to your Operating System.
 
 https://cran.rstudio.com/
 
