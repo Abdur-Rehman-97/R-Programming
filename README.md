@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+## Welcome to R-Programming
 
-You can use the [editor on GitHub](https://github.com/Abdur-Rehman-97/R-Programming/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+R is a programming language and software environment for statistical analysis, graphics representation and reporting suppoerted by R foundation. R was created by by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand. It is available freely under GNU General Public License. R is widely used among statisticians and data miners for developing statistical softwares and data analysis.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+R is interpreted language. It can be access to command-line interpreter. If a user types `5+3` at the R command prompt and presses enter, the computer replies with **8**, as shown below:
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+  > 5 + 3
+  [1] 8
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Installing R
+Your can donwload R from the link given below. choose R distribuition accordingly your Oerating System.
 
-### Jekyll Themes
+https://cran.rstudio.com/
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Abdur-Rehman-97/R-Programming/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Installing RStudio 
+R is the core or underline statistical language having no GUI (Graphical user interface) where users easily interact with R. Rstudio is an IDE (Integrated Development Environment) for R. You an download RStudio from the link given below.
+[RStudio](https://www.rstudio.com/). 
