@@ -104,3 +104,22 @@ we can set a default value for N.Let set N, if N is not given by user it will se
   x[use]
 }
 ```
+
+# Function that make Power
+```
+make.power <- function(n) {
+  pow <- function(x){
+    x^n
+  }
+  pow
+}
+
+cube <- make.power(3)
+square <- make.power(2)
+
+> cube(3)
+[1] 27
+> square(3)
+[1] 9
+
+```
