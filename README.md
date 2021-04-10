@@ -1,3 +1,4 @@
+This repo contain notes of R programming course of Data science Speciliazation offered by John Hopkins University on Courera. 
 ## Welcome to R-Programming
 
 R is a programming language and software environment for statistical analysis, graphics representation and reporting suppoerted by R foundation. R was created by by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand. It is available freely under GNU General Public License. R is widely used among statisticians and data miners for developing statistical softwares and data analysis.
