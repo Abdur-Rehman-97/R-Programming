@@ -105,7 +105,7 @@ we can set a default value for N.Let set N, if N is not given by user it will se
 }
 ```
 
-# Function that make Power
+## Function that make Power
 ```
 make.power <- function(n) {
   pow <- function(x){
