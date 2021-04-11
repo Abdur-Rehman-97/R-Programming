@@ -80,7 +80,7 @@ This function actully never uses the argument b, so calling f(4) wouldnot give a
       
       ## Erro: argument "b" is missing, no default value. 
 ```
-Noticed that '5' got printed frist before an error was trigered. This is because b did not have to be evaluated until after print(a). Once the function tried to evaluate the print(b) it had to throw an error.  
+Noticed that '4' got printed frist before an error was trigered. This is because b did not have to be evaluated until after print(a). Once the function tried to evaluate the print(b) it had to throw an error.  
 
 ** Examples of Function :**
 
