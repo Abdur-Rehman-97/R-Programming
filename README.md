@@ -140,6 +140,7 @@ easier.
 - **mapply:** Multivariate version of lapply.
 - **Split:** There's also another function called split which doesn't actually apply anything to objects. But it's often useful in conjunction with functions like    lapply or sapply because it splits objects into sub-pieces.
 
+
 ## Lapply Function:
 lappy takes three arguments
   1. a List X.
@@ -193,7 +194,8 @@ In the below example **runif** generate uniform variables (0 to 1) of each eleme
 ```
 
 
-**Example**
+**Example:**
+
 In this example **runif** generate uniform variables (0 to 10) of each element of X.  by using **min** and **max** arguments. Min define the lower limit and max define the max limit of unifrom distribuition. You can see in the output given below in example.
 ```
     X <- 1:4
@@ -209,3 +211,65 @@ In this example **runif** generate uniform variables (0 to 10) of each element o
     [1] 1.195114 3.594027 2.930794 2.766946
 
 ```
+
+
+## Apply Function
+  Apply is used to a evaluate a function (often an anonymous one) over the margins of an array.
+    - It is most often used to apply a function to the rows or columns of a matrix
+    - It can be used with general arrays, e.g. taking the average of an array of matrices
+    - It is not really faster than writing a foor loop, but it works in one line. This means that you use         the function **apply** involve less typing and **less typing is always better, because good                 programmers are always lazy.**
+
+  apply
+  str(apply)
+  function (X, MARGIN, FUN, ...)
+  1. x is an array
+  2. MARGIN Is an integer vector indicating which margins should be "retained".
+  3. FUN is a function to be applied 
+  4. dot dot dot ( ... ) is for other arguments to be passed to FUN
+
+  **Example:**
+  
+  In below example we created matrix of 20 rows and 10 columns. and than we took mean by using **Apply loop   function**. The function returns vector of length 10, which each element return mean of each column of     the matrix.
+  ```
+    X <- matrix(rnorm(200), 20, 10)
+    > apply(x, 2, mean)
+    [1] 0.04868268 0.35743615 -0.09104379
+    [4] -0.05381370 -0.16552070 -0.18192493
+    [7] 0.10285727 0.36519270 0.14898850
+    [10] 0.26767260
+    
+    > apply(x, 1, sum)
+    
+    [1] -1.94843314 2.60601195 1.51772391
+    [4] -2.80386816 3.73728682 -1.69371360
+    [7] 0.02359932 3.91874808 -2.39902859
+    [10] 0.48685925 -1.77576824 -3.34016277
+    [13] 4.04101009 0.46515429 1.83687755
+    [16] 4.36744690 2.21993789 2.60983764
+    [19] -1.48607630 3.58709251
+  ```
+  
+   ### col / row sums and means
+   
+   For sums and means of matrix dimensions, we have some shortcuts.
+   - rowSums = apply(x, 1, sum)
+   - rowMeans = apply(x, 1, mean)
+   - col Sums = apply(x, 2, sum)
+   - colmeans = apply(x, 2, mean)
+     The shortcut functions are much faster, but you won't notice unless you're using a large matrix.
+     
+   **Example of shortcut and apply function.**
+   In below example we are taking average by using both apply function and shortcut function.
+   
+   ```
+    > a <- array(rnorm( 2 * 2 * 10), C(2, 2, 10))
+> apply(a, cíl, 2), mean)
+      [,1]       [,2]
+[1,] -0.2353245 -0.03980211
+[2,] -0.3339748 0.04364908
+> roweans(a, dims = 2)
+       [,1]       [,2]
+[1,] -0.2353245 -0.03980211
+[2,1] -0.3339748 0.04364908
+   ```
+   
