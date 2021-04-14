@@ -133,12 +133,12 @@ square <- make.power(2)
 Writing **for**, **while** loops is useful when programming but not particularly easy when working
 interactively on the command line. There are some functions which implement looping to make life
 easier.
-**lapply:** Loop over a list and evaluate a function on each element
-**sapply:** Same as lapply but try to simplify the result
-**apply:** Apply a function over the margins of an array. Apply is a function that operates over the margins of an array. So, this is very useful if you want to take summaries of matrices or other or, higher dimensional arrays.
-**tapply:** tapply is short for Table apply. Apply a function over subsets of a vector
-**mapply:** Multivariate version of lapply
-**Split:** There's also another function called split which doesn't actually apply anything to objects. But it's often useful in conjunction with functions like lapply or sapply because it splits objects into sub-pieces.
+- **lapply:** Loop over a list and evaluate a function on each element.
+- **sapply:** Same as lapply but try to simplify the result.
+- **apply:** Apply a function over the margins of an array. Apply is a function that operates over the margins of an array. So, this is very useful if you want to    take summaries of matrices or other or, higher dimensional arrays.
+- **tapply:** tapply is short for Table apply. Apply a function over subsets of a vector.
+- **mapply:** Multivariate version of lapply.
+- **Split:** There's also another function called split which doesn't actually apply anything to objects. But it's often useful in conjunction with functions like    lapply or sapply because it splits objects into sub-pieces.
 
 ## Lapply Function:
 lappy takes three arguments
